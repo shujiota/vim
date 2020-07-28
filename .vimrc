@@ -145,6 +145,7 @@ fun! s:SpellConf()
   silent syntax
   redir END
 
+
   set spell
 
   if syntax =~? '/<comment\>'
@@ -295,18 +296,6 @@ let g:user_emmet_leader_key='<c-l>'
 imap <C-k> <Plug>(neosnippet_expand_or_jump)
 smap <C-k> <Plug>(neosnippet_expand_or_jump)
 xmap <C-k> <Plug>(neosnippet_expand_target)
-" SuperTab like snippets behavior.
-"imap <expr><TAB>
-"\ pumvisible() ? "\<C-n>" :
-" \ neosnippet#expandable_or_jumpable() ?
-" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-"smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
-"\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
-
-" For conceal markers.
-if has('conceal')
-  set conceallevel=2 concealcursor=niv
-endif
 
 "set snippet file dir
 let g:neosnippet#snippets_directory='~/neosnippet'
@@ -401,30 +390,7 @@ endif
   " Required:
   if dein#load_state('/home/vagrant/.cache/dein')
   call dein#begin('/home/vagrant/.cache/dein')
-  " Let dein manage dein
-  " Required:
-  call dein#add('/home/vagrant/.cache/dein/repos/github.com/Shougo/dein.vim')
-  call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
-  call dein#add('tomasr/molokai')
-  call dein#add ('cespare/vim-toml')
-  call dein#add('Shougo/neosnippet.vim')
-  call dein#add('Shougo/neosnippet-snippets')
-  call dein#add('Shougo/neocomplete.vim')
-  "call dein#add('Shougo/deoplete.nvim')
-
-  "" Set a single option
-  "call deoplete#custom#option('auto_complete_delay', 200)
-  "" Pass a dictionary to set multiple options
-  "call deoplete#custom#option({
-  "\ 'auto_complete_delay': 200,
-  "\ 'smart_case': v:true,
-  "\ })
-  "call deoplete#custom#option('smart_case', v:true)
-  "if !has('nvim')
-  "  call dein#add('roxma/nvim-yarp')
-  "  call dein#add('roxma/vim-hug-neovim-rpc')
-
-  "endif
+  
 
   let g:rc_dir = expand('~/') "<- dein.toml dein_lazy.toml を読み込むディレクトリ ##########
   let s:toml = g:rc_dir . 'dein.toml'

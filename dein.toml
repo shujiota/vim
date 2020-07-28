@@ -151,23 +151,20 @@ repo = 'ervandew/supertab'
 [[plugins]]
 repo = 'Shougo/context_filetype.vim'
 
-#[[plugins]]
-#repo = 'othree/javascript-libraries-syntax.vim'
-#
-#[[plugins]]
-#repo = 'othree/html5.vim'
-#
-#[[plugins]]
-#repo = 'carlitux/deoplete-ternjs'
-#
-#[[plugins]]
-#repo = 'pangloss/vim-javascript'
+[[plugins]]
+repo = 'Shougo/vimproc.vim'
 
-#[[plugins]]
-#repo = 'Shougo/deoplete.nvim'
-# neosnippet----------------
+[[plugins]]
+repo = 'tomasr/molokai'
+
+[[plugins]]
+repo = 'cespare/vim-toml'
 
 [[plugins]]
 repo = 'Shougo/neosnippet.vim'
-depends = ['neosnippet-snippets', 'context_filetype.vim']
-on_i = 1
+
+[[plugins]]
+repo ='Shougo/neosnippet-snippets'
+
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
