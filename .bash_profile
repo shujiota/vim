@@ -22,6 +22,7 @@ alias cap_deploy='bundle exec cap production deploy'
 set bell-style none
 alias cat_bash='cat ~/.bash_profile'
 alias source_bash='source ~/.bash_profile'
+alias vi_bash='vi ~/.bash_profile'
 alias rungo_scp_sql='scp conoha_myrungo:~/myrungo.sql /vagrant/APP/myrungo/zzz'
 alias rungo_import_sql='mysql -u root -p myrungo_development < /vagrant/APP/myrungo/zzz/myrungo.sql'
-alias rungo_export_sql='mysqldump -u  root -p myrungo_development > /vagrant/APP/myrungo/zzz/myrungo.sql'
+alias rungo_export_sql='mysqldump -u  root -p myrungo_development > /vagrant/APP/myrungo/myrungo.sql'
